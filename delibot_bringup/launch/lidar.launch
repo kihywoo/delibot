@@ -1,0 +1,7 @@
+<launch>
+  <arg name="set_frame_id" default="base_scan"/>
+
+  <node pkg="urg_node" type="urg_node" name="urg_node" output="screen">
+    <param name="frame_id" value="$(arg set_frame_id)"/>
+  </node>
+</launch>

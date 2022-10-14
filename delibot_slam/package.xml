@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>delibot_slam</name>
+  <version>0.0.0</version>
+  <description>The delibot_slam package</description>
+
+  <maintainer email="hw@naver.com">hw</maintainer>
+
+  <license>Apache 2.0</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+
+  <export>
+  </export>
+</package>
