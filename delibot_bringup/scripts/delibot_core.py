@@ -70,7 +70,6 @@ class serialRobot:
 						self.info[i] = float(arr[self.packet[i]+1:self.packet[i+1]])
 						self.memory = self.info
 						self.read_error = 0
-					print(self.info)
 
 			except Exception:
 				print("read Error")
@@ -132,7 +131,7 @@ class serialRobot:
 	
 
 if __name__ == '__main__':
-	port_name = rospy.get_param('~port','/dev/ttyUSB0')
+	port_name = rospy.get_param('~port','/dev/ttyATMEGA128')
 	baud = int(rospy.get_param('~baud','19200'))
 
 	robot = serialRobot(port_name , baud)

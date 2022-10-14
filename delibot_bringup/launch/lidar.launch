@@ -3,5 +3,8 @@
 
   <node pkg="urg_node" type="urg_node" name="urg_node" output="screen">
     <param name="frame_id" value="$(arg set_frame_id)"/>
+    <param name="baud" value="115600"/>
+    <param name="angle_max" value="1.4"/>
+    <param name="angle_min" value="-1.4"/>
   </node>
 </launch>

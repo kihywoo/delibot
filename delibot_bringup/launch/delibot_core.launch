@@ -2,13 +2,11 @@
 <arg name="model" default="$(find delibot_description)/urdf/delibot.urdf" />
 <param name="robot_description" textfile="$(arg model)" />
 
-  <!--node pkg="rosserial_python" type="serial_node.py" name="delibot_core" output="screen">
-    <param name="port" value="/dev/ttyUSB0"/>
-    <param name="baud" value="57600"/>
-  </node-->
+  <node pkg="delibot_bringup" type="delibot_core.py" name="delibot_core" output="screen">
+  </node>
 
   <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
-    <param name="publish_frequency" type="double" value="50.0" />
+    <param name="publish_frequency" type="double" value="10.0" />
   </node>
 
 </launch>
