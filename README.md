@@ -1,2 +1,2 @@
 # delibot
-ROS package of delibot
+ROS packages of delibot
